@@ -20,6 +20,8 @@ class Renderer {
         this.scene.add(this.cube);
 
         this.camera.position.z = 5;
+
+        this.render = this.render.bind(this)
     }
 
     render() {
